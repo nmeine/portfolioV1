@@ -1,16 +1,32 @@
-.Container {
-  position: absolute;
-  padding: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 #logo {
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
   transform: scale(0.8);
-  -webkit-transform: scale(0.8);
+}
+
+.container{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move 1.5s ease-in forwards 4s;
+}
+
+.custom-hover path{
+  transition: 0.3s;
+}
+
+.custom-hover:hover path {
+  fill: #6e72da;
+}
+
+.custom-hover:hover{
+  cursor: pointer;
 }
 
 @keyframes line-anim {
@@ -28,6 +44,12 @@
   }
 }
 
+@keyframes fill-after {
+  to {
+    fill: #ffffff;
+  }
+}
+
 @keyframes fill-purple {
   from {
     fill: transparent;
@@ -37,12 +59,26 @@
   }
 }
 
-@keyframes fade-out {
+@keyframes shrink {
   from {
-    opacity: 1;
+    transform: scale(0.8);
   }
   to {
-    opacity: 0;
-    transform: scale(0.1);
+    transform: scale(0.7);
+  }
+}
+
+@keyframes move {
+  from{
+    transform: scale(1) translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  to {
+    position: fixed;
+    top: -190px;
+    left: -115px;
+    z-index: 100;
+    transform: scale(0.2) translate(0, 0);
   }
 }

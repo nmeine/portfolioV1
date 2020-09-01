@@ -14,19 +14,18 @@ function Loader() {
       logoPaths[i].style.strokeDashoffset = logoPaths[i].getTotalLength();
       logoPaths[i].style.webkitAnimation = `line-anim 1s ease forwards ${delay}s`;
       if (logoPaths[i].id === "colored") {
-        logoPaths[i].style.webkitAnimation = `fill-purple 1s ease forwards 3s`;
+        logoPaths[i].style.webkitAnimation = 'fill-purple 1s ease forwards 3s';
       }
       delay += delayOffset;
     }
-    logo.style.webkitAnimation = "fill-white 0.5s ease forwards 2s, fade-out 0.5s cubic-bezier(0.76, 0, 0.24, 1) forwards 4.5s";
+    logo.style.webkitAnimation = "fill-white 0.5s ease forwards 2s, shrink 2s ease-in forwards 4s";
+    setTimeout(() => {
+      logo.classList.add('custom-hover');
+    }, 7000);
   }, []);
 
   return (
-    <div className="Loader">
-      <div className="Container">
-        <LogoIcon />
-      </div>
-    </div>
+    <LogoIcon />
   );
 }
 

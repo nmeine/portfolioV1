@@ -5,9 +5,8 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
-        <div className='nav-bar'>
+        <div className='nav-bar' id='side-bar'>
             <div className='content'>
-                <NLogo />
                 <nav className='nav-pages'>
                     <Link to='/'>
                         <div className='nav-item'>
