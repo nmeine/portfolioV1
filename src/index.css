@@ -2,10 +2,21 @@ body {
   margin: 0;
   padding: 0;
   background-color: #c7c7c7;
-  font-family: "Space Mono";
+  font-family: SpaceMono;
   margin-top: 42px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   color: #ffffff;
+}
+
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: local('SpaceMono'), url(./fonts/SpaceMono-Regular.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: 'OpenSans';
+  src: local('OpenSans'), url(./fonts/OpenSans-Regular.ttf) format('truetype');
 }

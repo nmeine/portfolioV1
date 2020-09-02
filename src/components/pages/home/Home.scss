@@ -3,3 +3,79 @@
   width: 100%;
   height: 100%;
 }
+
+.resume-icon{
+  position: absolute;
+  width: 30vh;
+  height: 7vh;
+  top: 3.5vh;
+  right: 2vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#BitMoji{
+  height: 100%;
+  margin: auto;
+}
+
+.resume-button{
+  margin: auto;
+}
+
+.content-wrapper{
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 15vh;
+  height: 85vh;
+  width: 100%;
+}
+
+.title-section{
+  line-height: 2vh;
+  text-align: center;
+}
+
+.title-section h3{
+  color: #000000;
+}
+.title-section h1{
+  color: #6e72da;
+  font-size: 8vh;
+}
+
+.title-section h2{
+  font-family: OpenSans;
+  font-size: 7vh;
+  line-height: 5.5vh;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.intro-section{
+  margin-top: 5vh;
+  font-size: 2vh;
+  font-family: OpenSans;
+  text-align: center;
+  width: 55ch;
+  color: #000000;
+}
+
+.contact{
+  margin-top: 8vh;
+}
+
+.pyramid{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.3);
+  top: 20vh;
+  left: 35%;
+}

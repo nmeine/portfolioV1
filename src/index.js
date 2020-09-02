@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './fonts/OpenSans-Bold.ttf';
+import './fonts/OpenSans-Regular.ttf';
+import './fonts/SpaceMono-Regular.ttf';
+import './fonts/SpaceMono-Bold.ttf';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
