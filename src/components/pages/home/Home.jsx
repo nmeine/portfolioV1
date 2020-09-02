@@ -4,6 +4,7 @@ import Button from 'components/styles/Button';
 import LargeButton from 'components/styles/LargeButton';
 import Pyramid from 'components/icons/Pyramid';
 import './Home.scss';
+import { useEffect } from 'react';
 
 function Home() {
     return (
