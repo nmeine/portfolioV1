@@ -8,7 +8,7 @@
 
 .about-content-wrapper{
  position: absolute;
- top: 20%;
+ top: 17%;
  left: 4vw;
  width: 600px;
 }
@@ -53,46 +53,4 @@
 .right{
   margin-left: 60px;
 }
-
-.draw-container{
-  height: 400px;
-  width: 400px;
-  background-color: white;
-  position: absolute;
-  right: 10%;
-  top: 30%;
-}
-
-.draw-container svg{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-#python{
-  height: 100%;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: draw-python 4s ease-in forwards;
-}
-
-#c{
-  stroke-dasharray: 7000;
-  stroke-dashoffset: 7000;
-  animation: draw-c 8s ease-in forwards;
-}
-
-@keyframes draw-python{
-  0%{
-    opacity: 1;
-  }
-  99%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    stroke-dashoffset: 0;
-  }
-}
-
 
