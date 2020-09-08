@@ -3,3 +3,96 @@
   width: 100%;
   height: 100%;
 }
+
+
+
+.about-content-wrapper{
+ position: absolute;
+ top: 20%;
+ left: 4vw;
+ width: 600px;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.info-body{
+  color: #000000;
+  font-family: OpenSans;
+  font-size: 16px;
+}
+
+.line{
+  position: absolute;
+  left: 220px;
+  height: 2px;
+  min-width: 300px;
+  width: 23.5vw;
+  background-color: #FFFFFF;
+}
+
+.purple{
+  color: #6e72da;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+}
+
+.list ul{
+  padding-left: 20px;
+}
+
+.right{
+  margin-left: 60px;
+}
+
+.draw-container{
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+
+.draw-container svg{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#python{
+  height: 100%;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw-python 4s ease-in forwards;
+}
+
+#c{
+  stroke-dasharray: 7000;
+  stroke-dashoffset: 7000;
+  animation: draw-c 8s ease-in forwards;
+}
+
+@keyframes draw-python{
+  0%{
+    opacity: 1;
+  }
+  99%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    stroke-dashoffset: 0;
+  }
+}
+
+
